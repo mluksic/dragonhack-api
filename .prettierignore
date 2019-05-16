@@ -12,3 +12,6 @@ www
 
 # Ignore package.json and package-lock.json as it is formatted by NPM command
 package*.json
+
+# Ignore .yml files
+*.yml
