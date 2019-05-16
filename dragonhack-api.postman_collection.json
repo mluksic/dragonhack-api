@@ -1,0 +1,24 @@
+{
+	"info": {
+		"_postman_id": "0b0e722e-44e9-43d9-be29-32b35cc7bfb5",
+		"name": "dragonhack-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello-world",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

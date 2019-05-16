@@ -1,0 +1,8 @@
+{
+    "type": "node",
+    "request": "attach",
+    "name": "Docker: Attach to Node",
+    "sourceMapPathOverrides": {
+        "/usr/app/*": "${workspaceRoot}/*"
+    }
+}

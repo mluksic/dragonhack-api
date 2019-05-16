@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "cSpell.words": ["nestjs", "quotemark"],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [100],
+    "prettier.tslintIntegration": true
+}
