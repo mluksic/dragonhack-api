@@ -29,8 +29,7 @@ Download and install:
 - [NPM](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- Install recommended extensions for this workspace (open extensions and search `@recommended`) (VSCode)
-- Software for data representation of SQL databases (eg: [HeidiSQL](https://www.heidisql.com/))
+- Install recommended extensions for this workspace (open extensions and search `@recommended`) (VSCode)- Software for data representation of SQL databases (eg: [HeidiSQL](https://www.heidisql.com/))
 - [Postman](https://www.getpostman.com/downloads/)
 
 ## Clone the repository
