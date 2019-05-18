@@ -2,9 +2,9 @@
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "dragonhack",
-    "password": "dragonhack",
-    "database": "dragonhack",
+    "username": "kkbrimgboeeqao",
+    "password": "869b3cd5532c360f85eda2384d4f57077b10ec33d3d1db751bd85d2576991725",
+    "database": "ddv2gc1kq1h386",
     "entities": ["src/**/*.entity{.ts,.js}"],
     "synchronize": true
 }
