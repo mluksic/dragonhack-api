@@ -1,21 +1,57 @@
 {
 	"info": {
-		"_postman_id": "0b0e722e-44e9-43d9-be29-32b35cc7bfb5",
+		"_postman_id": "eba51740-8d09-4c11-8ed4-c90d8289ee1b",
 		"name": "dragonhack-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "hello-world",
+			"name": "devices",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
-					"raw": ""
+					"raw": "{{baseUrl}}/devices",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campaigns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/campaigns",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ads",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ads"
+					]
 				}
 			},
 			"response": []
