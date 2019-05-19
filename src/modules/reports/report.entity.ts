@@ -23,4 +23,7 @@ export class Report extends BaseEntity {
         nullable: false,
     })
     ad: Ad;
+
+    @Column()
+    adTag: string;
 }
