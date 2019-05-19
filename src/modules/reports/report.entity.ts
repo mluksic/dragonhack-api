@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany, ManyToOne } from 'typeorm';
 
 @Entity()
 export class Report extends BaseEntity {
@@ -13,4 +13,7 @@ export class Report extends BaseEntity {
 
     @Column()
     emotional: string;
+
+    @Column()
+    adTag: string;
 }
