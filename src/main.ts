@@ -4,9 +4,10 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
+    app.enableCors();
     const options = new DocumentBuilder()
         .setTitle('DragonHack API: Agriculture API')
-        .setDescription('API for managing agriculture devices')
+        .setDescription('API for facial recognition')
         .setVersion('1.0')
         .addTag('iot')
         .build();

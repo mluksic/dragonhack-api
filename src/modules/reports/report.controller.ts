@@ -10,6 +10,6 @@ export class ReportController {
 
     @Override()
     createOne(@ParsedParams() params, @ParsedBody() body: Report) {
-        return this.service.createAndGetAdd(body);
+        return this.service.createAndGetAd(body);
     }
 }

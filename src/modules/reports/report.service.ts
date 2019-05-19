@@ -15,13 +15,13 @@ export class ReportService extends RepositoryService<Report> {
         super(repository);
     }
 
-    async createAndGetAdd(report: Report): Promise<Ad> {
-        this.reportRepository.insert(report);
+    async createAndGetAd(report: Report): Promise<Ad> {
         const ads = await this.adRepository.find({ tag: report.adTag });
         let ad = null;
         if (ads.length) {
-            ad = ads.pop();
-            // report.ad = ad;
+            ad = ads[Math.floor(Math.random() * ads.length)];
+            report.ad = ad;
+            this.reportRepository.insert(report);
         }
         return ad !== null ? ad.image : '';
     }

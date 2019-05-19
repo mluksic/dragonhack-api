@@ -1,4 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinColumn } from 'typeorm';
+import { Ad } from '../ad/ad.entity';
+import { ValidateNested } from 'class-validator';
 
 @Entity()
 export class Campaign {
@@ -7,4 +9,11 @@ export class Campaign {
 
     @Column()
     name: string;
+
+    @OneToMany(type => Ad, p => p.campaign, {
+        nullable: false,
+        eager: true,
+    })
+    @JoinColumn()
+    ads: Ad[];
 }

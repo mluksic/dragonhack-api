@@ -7,4 +7,7 @@ export class Device {
 
     @Column()
     name: string;
+
+    @Column()
+    location: string;
 }
