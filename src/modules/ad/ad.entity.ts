@@ -1,4 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, JoinColumn } from 'typeorm';
+import { Campaign } from '../campaign/campaign.entity';
+import { Report } from '../reports/report.entity';
+import { ValidateNested } from 'class-validator';
 
 @Entity()
 export class Ad {
@@ -9,8 +12,17 @@ export class Ad {
     tag: string;
 
     @Column()
+    image: string;
+
+    @Column()
     gender: string;
 
     @Column()
-    image: string;
+    location: string;
+
+    @ManyToOne(type => Campaign, c => c.ads)
+    campaign: Campaign;
+
+    @OneToMany(type => Report, p => p.ad)
+    reports: Report[];
 }
