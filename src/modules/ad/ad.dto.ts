@@ -4,6 +4,9 @@ import { Type } from 'class-transformer';
 
 export class AdDTO {
     @IsString()
+    readonly name: string;
+
+    @IsString()
     readonly tag: string;
 
     @IsString()

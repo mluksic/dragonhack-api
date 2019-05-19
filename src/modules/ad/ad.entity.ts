@@ -9,6 +9,9 @@ export class Ad {
     id: number;
 
     @Column()
+    name: string;
+
+    @Column()
     tag: string;
 
     @Column()
