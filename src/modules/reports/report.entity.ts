@@ -1,7 +1,8 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany, ManyToOne } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne, JoinColumn } from 'typeorm';
 import { CrudValidate } from '@nestjsx/crud';
 import { IsOptional, IsNotEmpty } from 'class-validator';
 import { Ad } from '../ad/ad.entity';
+import { BaseEntity } from 'src/base-entity';
 const { CREATE, UPDATE } = CrudValidate;
 
 @Entity()
@@ -19,9 +20,10 @@ export class Report extends BaseEntity {
     emotional: string;
 
     @ManyToOne(type => Ad, c => c.reports, {
-        eager: true,
         nullable: false,
+        eager: true,
     })
+    @JoinColumn()
     ad: Ad;
 
     @Column()
